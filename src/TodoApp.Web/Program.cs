@@ -28,7 +28,7 @@ public class Program
             .WriteTo.Async(c => c.File("Logs/logs.txt"))
             .WriteTo.Async(c => c.Console())
             .CreateLogger();
-        
+
         string original = "Here is some data to encrypt!";
 
         //c# Encrypt with AES
@@ -42,7 +42,7 @@ public class Program
 
             //Display the original data and the decrypted data.
             Console.WriteLine("Original:   {0}", original);
-            
+
         }
 
 
@@ -109,3 +109,4 @@ public class Program
         // Return the encrypted bytes from the memory stream.
         return encrypted;
     }
+}
