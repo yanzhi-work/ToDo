@@ -32,6 +32,10 @@ public class TodoAppMenuContributor : IMenuContributor
                 "~/",
                 icon: "fas fa-home",
                 order: 0
+            ).AddItem(new ApplicationMenuItem(
+            "MyBooks",
+            l["Menu:Book"],
+            url: "~/TodoApp/Book")
             )
         );
 
